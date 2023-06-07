@@ -2,6 +2,8 @@ import { useState } from "react";
 import { createPortal } from "react-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 
+import useScreen from "../hooks/useScreen";
+
 import styles from "./Header.module.scss";
 
 const menu = (
@@ -23,15 +25,23 @@ const menu = (
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const { isMobileScreen } = useScreen();
+
   const menuClickHandler = () => setIsMenuOpen((prevMenu) => !prevMenu);
 
   return (
     <header className={styles.container}>
       <h1>Shortly</h1>
-      <button onClick={menuClickHandler}>
-        <AiOutlineMenu />
-      </button>
-      {isMenuOpen &&
+      {isMobileScreen ? (
+        <button onClick={menuClickHandler}>
+          <AiOutlineMenu />
+        </button>
+      ) : (
+        menu
+      )}
+
+      {isMobileScreen &&
+        isMenuOpen &&
         createPortal(menu, document.getElementById("overlay") as HTMLElement)}
     </header>
   );

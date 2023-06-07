@@ -44,9 +44,37 @@
     margin: 0 1.5rem;
   }
 
-  .highlighted {
+  li.highlighted {
     background-color: $background-highlighted;
     padding: 0.5rem;
     border-radius: 30px;
+    color: $color-highlighted;
+  }
+
+  @media (min-width: $mobile-size) {
+    position: static;
+    width: 100%;
+    background-color: inherit;
+    margin: 0;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    div {
+      display: inline-block;
+    }
+
+    .action {
+      border: none;
+    }
+
+    li {
+      display: inline-block;
+      color: $color-secondary;
+      margin: 0 1rem;
+    }
   }
 }

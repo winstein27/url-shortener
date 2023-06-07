@@ -9,6 +9,10 @@
     border: none;
     padding: 0;
     transform: scale(2);
+
+    svg {
+      fill: $color-secondary;
+    }
   }
 }
 
@@ -20,8 +24,7 @@
   margin: 0 7.5%;
   z-index: 5;
   text-align: center;
-  background-color: hsl(257, 27%, 26%);
-  color: white;
+  background-color: $background;
   border-radius: 8px;
 
   ul {
@@ -33,15 +36,16 @@
   li {
     margin: 1.5rem 0;
     font-weight: bold;
+    color: $color-highlighted;
   }
 
   .action {
-    border-top: 1px solid hsl(0, 0%, 75%);
+    border-top: 1px solid $color-secondary;
     margin: 0 1.5rem;
   }
 
   .highlighted {
-    background-color: hsl(180, 66%, 49%);
+    background-color: $background-highlighted;
     padding: 0.5rem;
     border-radius: 30px;
   }

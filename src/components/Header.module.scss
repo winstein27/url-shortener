@@ -37,6 +37,10 @@
     margin: 1.5rem 0;
     font-weight: bold;
     color: $color-highlighted;
+
+    &:hover {
+      color: $color-primary;
+    }
   }
 
   .action {
@@ -49,6 +53,10 @@
     padding: 0.5rem;
     border-radius: 30px;
     color: $color-highlighted;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
   }
 
   @media (min-width: $mobile-size) {

@@ -4,6 +4,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 import useScreen from "../hooks/useScreen";
 
+import Logo from "../assets/images/logo.svg";
+
 import styles from "./Header.module.scss";
 
 const menu = (
@@ -31,7 +33,7 @@ const Header = () => {
 
   return (
     <header className={styles.container}>
-      <h1>Shortly</h1>
+      <img src={Logo} alt="Shortly" />
       {isMobileScreen ? (
         <button onClick={menuClickHandler}>
           <AiOutlineMenu />

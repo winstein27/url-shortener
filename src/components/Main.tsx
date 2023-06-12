@@ -11,6 +11,7 @@ const Main = () => {
         Build your brand's recognition and get detailed insights on how your
         links are performing.
       </p>
+      <a href="#">Get Started</a>
     </main>
   );
 };

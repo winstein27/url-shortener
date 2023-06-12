@@ -1,0 +1,31 @@
+.form {
+  background-color: $background;
+  padding: 1.3rem;
+  border-radius: 6px;
+  margin-top: 3rem;
+
+  input,
+  button {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border-radius: 6px;
+    border: none;
+  }
+
+  input {
+    margin-bottom: 1rem;
+    outline: none;
+
+    &::placeholder {
+      color: $color-secondary;
+      opacity: 1;
+    }
+  }
+
+  button {
+    background-color: $background-highlighted;
+    color: $color-highlighted;
+    font-weight: bold;
+  }
+}

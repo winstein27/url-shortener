@@ -2,6 +2,8 @@ import Working from "../assets/images/illustration-working.svg";
 
 import styles from "./Main.module.scss";
 
+import ShortenForm from "./main/ShortenForm";
+
 const Main = () => {
   return (
     <main className={styles.container}>
@@ -12,6 +14,8 @@ const Main = () => {
         links are performing.
       </p>
       <a href="#">Get Started</a>
+
+      <ShortenForm />
     </main>
   );
 };

@@ -1,5 +1,9 @@
 .form {
   background-color: $background;
+  background-image: url("../../assets//images//bg-shorten-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
+  background-size: 70% 70%;
   padding: 1.3rem;
   border-radius: 6px;
   margin-top: 3rem;
@@ -27,5 +31,10 @@
     background-color: $background-highlighted;
     color: $color-highlighted;
     font-weight: bold;
+  }
+
+  @media (min-width: $mobile-size) {
+    background-image: url("../../assets/images/bg-shorten-desktop.svg");
+    background-size: cover;
   }
 }

@@ -36,5 +36,22 @@
   @media (min-width: $mobile-size) {
     background-image: url("../../assets/images/bg-shorten-desktop.svg");
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+
+    input,
+    button {
+      display: inline-block;
+      margin: 0;
+    }
+
+    input {
+      width: 70%;
+    }
+
+    button {
+      width: 20%;
+    }
   }
 }

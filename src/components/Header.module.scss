@@ -2,7 +2,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
+  max-width: $max-width;
+  margin: auto;
 
   button {
     background-color: inherit;
@@ -13,10 +15,6 @@
     svg {
       fill: $color-secondary;
     }
-  }
-
-  @media (min-width: $mobile-size) {
-    padding: 0 1.5rem;
   }
 }
 
@@ -34,7 +32,6 @@
   ul {
     list-style-type: none;
     padding: 0;
-    margin: 2rem 0;
   }
 
   li {
@@ -81,6 +78,7 @@
 
     .action {
       border: none;
+      margin: 0;
     }
 
     li {

@@ -1,0 +1,44 @@
+.footer {
+  background-color: $footer-background;
+  width: 100%;
+  text-align: center;
+
+  svg {
+    fill: $color-highlighted;
+    margin: 2rem 0;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      color: $color-highlighted;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: $color-secondary;
+        font-weight: normal;
+      }
+    }
+
+    .links {
+      margin: 1.5rem 0;
+
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+}
+
+.social {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+
+  img {
+    margin: 0 1rem;
+  }
+}

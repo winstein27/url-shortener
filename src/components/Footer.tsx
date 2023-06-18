@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <Logo />
-      <ul>
+      <ul className={styles.list}>
         <li>
           Features
           <ul className={styles.links}>

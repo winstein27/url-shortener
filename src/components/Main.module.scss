@@ -20,21 +20,6 @@
     font-size: 1.2rem;
   }
 
-  a {
-    background-color: $background-highlighted;
-    font-weight: bold;
-    padding: 1rem 2rem;
-    border-radius: 30px;
-    color: $color-highlighted;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 0.5rem;
-
-    &:hover {
-      background-color: $color-secondary;
-    }
-  }
-
   @media (min-width: $mobile-size) {
     // padding: 0;
 
@@ -54,5 +39,31 @@
         text-align: left;
       }
     }
+  }
+}
+
+.button {
+  background-color: $background-highlighted;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  color: $color-highlighted;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+
+  &:hover {
+    background-color: $color-secondary;
+  }
+}
+
+.boost {
+  background-color: $background;
+  padding: 3.5rem 0;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    color: $color-highlighted;
   }
 }

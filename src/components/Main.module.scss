@@ -59,11 +59,18 @@
 
 .boost {
   background-color: $background;
+  background-image: url("../assets/images/bg-boost-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 right 0;
   padding: 3.5rem 0;
   text-align: center;
 
   h2 {
     margin: 0;
     color: $color-highlighted;
+  }
+
+  @media (min-width: $mobile-size) {
+    background-image: url("../assets/images/bg-boost-desktop.svg");
   }
 }

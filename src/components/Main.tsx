@@ -3,6 +3,7 @@ import Working from "../assets/images/illustration-working.svg";
 import styles from "./Main.module.scss";
 
 import ShortenForm from "./main/ShortenForm";
+import Features from "./main/Features";
 
 const Main = () => {
   return (
@@ -24,6 +25,7 @@ const Main = () => {
 
         <ShortenForm />
       </main>
+      <Features />
 
       <div className={styles.boost}>
         <h2>Boost your links today</h2>

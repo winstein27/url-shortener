@@ -2,7 +2,7 @@ import styles from "./Features.module.scss";
 
 const Features = () => {
   return (
-    <div>
+    <div className={styles.features}>
       <div>
         <h2>Advanced Statistics</h2>
         <p>

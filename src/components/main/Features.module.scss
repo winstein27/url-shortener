@@ -1,8 +1,26 @@
 .features {
   background-color: $features-background;
+  text-align: center;
 
   h2,
   p {
     margin: 0;
+  }
+
+  p {
+    color: $color-secondary;
+  }
+
+  .main-feature {
+    padding: 3rem 1rem;
+    padding-top: 4.5rem;
+  }
+
+  .feature {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    background-color: $background-card;
+    margin-bottom: 2rem;
   }
 }

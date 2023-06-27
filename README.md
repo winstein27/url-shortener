@@ -11,7 +11,6 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -44,11 +43,10 @@ Users should be able to:
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Sass
+- React
+- TypeScript
 
 ### What I learned
 
@@ -74,10 +72,6 @@ const proudOfThisFunc = () => {
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 ### Useful resources
 
 - [Sass Global Variables](https://stackoverflow.com/questions/70849338/how-to-use-sass-global-variables-from-other-components-in-vite-vue3) - This helped me setting up Sass global variables to the project.
@@ -85,6 +79,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- LinkedIn - [Winstein Martins](https://www.linkedin.com/in/winstein-martins/)

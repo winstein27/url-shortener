@@ -1,6 +1,7 @@
 .features {
   background-color: $features-background;
   text-align: center;
+  padding-bottom: 2rem;
 
   h2,
   p {
@@ -22,5 +23,9 @@
     padding: 1rem;
     background-color: $background-card;
     margin-bottom: 2rem;
+  }
+
+  .feature:last-of-type {
+    margin-bottom: 0;
   }
 }

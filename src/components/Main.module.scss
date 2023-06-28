@@ -1,27 +1,28 @@
 .container {
-  margin: 1rem;
   text-align: center;
-  overflow: hidden;
-  max-width: $max-width;
-  margin: auto;
-  padding: 1rem;
+  width: 100%;
 
-  .main-img {
+  .description {
     width: 100%;
-  }
+    padding: 1rem;
 
-  .slogan {
-    font-size: 2.5rem;
-    line-height: 2.7rem;
-  }
+    .main-img {
+      width: 100%;
+    }
 
-  .detail {
-    color: $color-secondary;
-    font-size: 1.2rem;
+    .slogan {
+      font-size: 2.5rem;
+      line-height: 2.7rem;
+    }
+
+    .detail {
+      color: $color-secondary;
+      font-size: 1.2rem;
+    }
   }
 
   @media (min-width: $mobile-size) {
-    // padding: 0;
+    overflow: hidden;
 
     .description {
       display: flex;
@@ -39,39 +40,41 @@
         text-align: left;
       }
     }
+    @media (min-width: $mobile-size) {
+    }
   }
-}
 
-.button {
-  background-color: $background-highlighted;
-  font-weight: bold;
-  padding: 1rem 2rem;
-  border-radius: 30px;
-  color: $color-highlighted;
-  text-decoration: none;
-  display: inline-block;
-  margin-top: 0.5rem;
-
-  &:hover {
-    background-color: $color-secondary;
-  }
-}
-
-.boost {
-  background-color: $background;
-  background-image: url("../assets/images/bg-boost-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: top 0 right 0;
-  padding: 3.5rem 0;
-  text-align: center;
-
-  h2 {
-    margin: 0;
+  .button {
+    background-color: $background-highlighted;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 30px;
     color: $color-highlighted;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
   }
 
-  @media (min-width: $mobile-size) {
-    background-image: url("../assets/images/bg-boost-desktop.svg");
-    background-size: 100%;
+  .boost {
+    background-color: $background;
+    background-image: url("../assets/images/bg-boost-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    padding: 3.5rem 0;
+    text-align: center;
+
+    h2 {
+      margin: 0;
+      color: $color-highlighted;
+    }
+
+    @media (min-width: $mobile-size) {
+      background-image: url("../assets/images/bg-boost-desktop.svg");
+      background-size: 100%;
+    }
   }
 }

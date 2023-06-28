@@ -25,6 +25,11 @@
           text-decoration: none;
           color: $color-secondary;
           font-weight: normal;
+
+          &:hover,
+          &:active {
+            color: $background-highlighted;
+          }
         }
       }
 

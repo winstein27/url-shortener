@@ -1,47 +1,79 @@
-.features {
+.container {
   background-color: $features-background;
-  text-align: center;
-  padding-bottom: 2rem;
+  width: 100%;
 
-  h2,
-  p {
-    margin: 0;
-  }
-
-  p {
-    color: $color-secondary;
-  }
-
-  .main-feature {
-    padding: 4.5rem 1rem;
-  }
-
-  .feature {
-    width: 90%;
+  .features {
+    text-align: center;
+    padding-bottom: 2rem;
+    max-width: $max-width;
     margin: auto;
-    padding: 1rem;
-    padding-top: 4rem;
-    background-color: $background-card;
-    margin-bottom: 5rem;
-    position: relative;
 
-    .image {
-      background-color: $background;
+    h2,
+    p {
+      margin: 0;
+    }
+
+    p {
+      color: $color-secondary;
+    }
+
+    .main-feature {
+      padding: 4.5rem 1rem;
+    }
+
+    .feature {
+      width: 90%;
+      margin: auto;
       padding: 1rem;
-      border-radius: 50%;
-      position: absolute;
-      top: -40px;
-      left: 50%;
-      transform: translateX(-50%);
-      text-align: center;
+      padding-top: 4rem;
+      background-color: $background-card;
+      margin-bottom: 5rem;
+      position: relative;
 
-      img {
-        vertical-align: middle;
+      .image {
+        background-color: $background;
+        padding: 1rem;
+        border-radius: 50%;
+        position: absolute;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+
+        img {
+          vertical-align: middle;
+        }
       }
     }
-  }
 
-  .feature:last-of-type {
-    margin-bottom: 0;
+    .feature:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $mobile-size) {
+      .features-group {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 4rem;
+
+        .feature {
+          width: 30%;
+          margin: 0 1rem;
+
+          .image {
+            left: 60px;
+          }
+        }
+
+        .feature + .feature {
+          margin-top: 2rem;
+        }
+
+        .feature + .feature + .feature {
+          margin-top: 4rem;
+        }
+      }
+    }
   }
 }

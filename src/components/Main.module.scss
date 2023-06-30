@@ -25,6 +25,8 @@
     overflow: hidden;
 
     .description {
+      max-width: $max-width;
+      margin: auto;
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;

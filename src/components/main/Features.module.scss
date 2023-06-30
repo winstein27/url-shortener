@@ -13,16 +13,32 @@
   }
 
   .main-feature {
-    padding: 3rem 1rem;
-    padding-top: 4.5rem;
+    padding: 4.5rem 1rem;
   }
 
   .feature {
     width: 90%;
     margin: auto;
     padding: 1rem;
+    padding-top: 4rem;
     background-color: $background-card;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+    position: relative;
+
+    .image {
+      background-color: $background;
+      padding: 1rem;
+      border-radius: 50%;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+
+      img {
+        vertical-align: middle;
+      }
+    }
   }
 
   .feature:last-of-type {
